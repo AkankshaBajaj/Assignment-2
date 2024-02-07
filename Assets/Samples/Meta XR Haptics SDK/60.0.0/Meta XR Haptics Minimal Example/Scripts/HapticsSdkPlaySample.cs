@@ -20,6 +20,8 @@ public class HapticsSdkPlaySample : MonoBehaviour
     HapticClipPlayer _playerRight1;
     HapticClipPlayer _playerRight2;
 
+    public Collider FenceCollider; // Reference to the collider component attached to the fence GameObject
+
 
     protected virtual void Start()
     {
