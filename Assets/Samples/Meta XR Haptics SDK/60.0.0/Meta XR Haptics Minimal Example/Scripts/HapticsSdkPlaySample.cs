@@ -20,6 +20,7 @@ public class HapticsSdkPlaySample : MonoBehaviour
     HapticClipPlayer _playerRight1;
     HapticClipPlayer _playerRight2;
 
+
     protected virtual void Start()
     {
         // We create two haptic clip players for each hand.
@@ -32,6 +33,9 @@ public class HapticsSdkPlaySample : MonoBehaviour
         _playerLeft2.priority = 1;
         _playerRight2.priority = 1;
     }
+    
+
+
 
     // This helper function allows us to identify the controller we are currently playing back on.
     // We use this further down for logging purposes.
