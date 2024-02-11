@@ -2403,7 +2403,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _audioClips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 6c2c0e5c0413c1345a45b15355b36f22, type: 3}
+      objectReference: {fileID: 8300000, guid: db3ce747f6d6d2d4583354f85f2d0acb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16176,35 +16176,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    Hi, I am Miss Green and I welcome you as a new caretaker of my
-    farm. I am going to the city but dont worry, my farm is automated One thing is
-    that you would gently need to put animals in the coop as they like human touch.
-
-    Instructions
-
-    Beware
-    of the dog, might bite but is vaccinated.
-
-    Put chicken and Kitty in the
-    coop.
-
-    Leave the rabbit outside and feed it a carrot.
-
-    
-
-    My chicken
-    and kitty are grateful but the dog is not thankful.
-
-    
-
-    Press the red
-    button to send me away
-
-    
-
-'
+  m_text: "\r\nHi, I am Miss Green and I welcome you as a new caretaker of my farm.
+    I am going to the city but dont worry, my farm is automated One thing is that
+    you would gently need to put animals in the coop as they like human touch.\r\n\r\nInstructions\r\n\r\nYou
+    will get a big heart if \r\n\r\nYou put the dog in Coop.Beware , it might bite
+    but is vaccinated, \r\nPut chicken and Kitty in the coop.\r\nLeave the rabbit
+    outside and feed it a carrot.\r\n\r\nMy chicken and kitty are grateful but the
+    dog is not thankful.\r\nPress the red button to send me away"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
   m_sharedMaterial: {fileID: 7032093815205813286, guid: fc41d5815b9a5bb48be4c84a746c4ff6,
@@ -28907,7 +28885,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 445939006}
+      objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63,
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[4].m_Target
@@ -28961,7 +28939,7 @@ PrefabInstance:
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63,
         type: 3}
       propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: DisableWelcomeCard
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63,
         type: 3}
@@ -33772,6 +33750,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a,
         type: 3}
+      propertyPath: Priority
+      value: 221
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a,
+        type: 3}
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
@@ -33779,7 +33762,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6c2c0e5c0413c1345a45b15355b36f22, type: 3}
+      objectReference: {fileID: 8300000, guid: db3ce747f6d6d2d4583354f85f2d0acb, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a,
         type: 3}
       propertyPath: DopplerLevel
@@ -33864,7 +33847,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _audioClips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 6c2c0e5c0413c1345a45b15355b36f22, type: 3}
+      objectReference: {fileID: 8300000, guid: db3ce747f6d6d2d4583354f85f2d0acb, type: 3}
     - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a,
         type: 3}
       propertyPath: _audioClips.Array.data[1]
@@ -37811,7 +37794,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 539cf06e1e6db4344a17b2f72cd6a1ad, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 39865b13780fc52458183a607892316b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.782
   m_Pitch: 1
