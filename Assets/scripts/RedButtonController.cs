@@ -1,59 +1,70 @@
 using UnityEngine;
 
-public class RedButtonController : MonoBehaviour
+public class WellDoneTrigger : MonoBehaviour
 {
-    public GameObject farmer; // Reference to the farmer GameObject
-    public GameObject banner; // Reference to the banner GameObject
+    public GameObject Kitty; // Capitalized "Kitty"
+    public GameObject Chicken; // Capitalized "Chicken"
+    public GameObject Dog; // Capitalized "Dog"
 
-    // Function to enable the farmer GameObject
-    public void EnableFarmer()
+    public AudioClip wellDoneClip;
+    private AudioSource audioSource;
+
+    private bool kittyInCoop = false;
+    private bool chickenInCoop = false;
+    private bool dogInCoop = false;
+
+    void Start()
     {
-        if (farmer != null)
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        // Check if all three animals are in the coop
+        if (kittyInCoop && chickenInCoop && dogInCoop)
         {
-            farmer.SetActive(true);
-        }
-        else
-        {
-            Debug.LogWarning("No farmer GameObject assigned to enable!");
+            PlayWellDoneSound();
         }
     }
 
-    // Function to disable the farmer GameObject
-    public void DisableFarmer()
+    void OnTriggerEnter(Collider other)
     {
-        if (farmer != null)
+        if (other.gameObject == Kitty) // Capitalized "Kitty"
         {
-            farmer.SetActive(false);
+            kittyInCoop = true;
         }
-        else
+        else if (other.gameObject == Chicken) // Capitalized "Chicken"
         {
-            Debug.LogWarning("No farmer GameObject assigned to disable!");
+            chickenInCoop = true;
+        }
+        else if (other.gameObject == Dog) // Capitalized "Dog"
+        {
+            dogInCoop = true;
         }
     }
 
-    // Function to enable the banner GameObject
-    public void EnableBanner()
+    void OnTriggerExit(Collider other)
     {
-        if (banner != null)
+        if (other.gameObject == Kitty) // Capitalized "Kitty"
         {
-            banner.SetActive(true);
+            kittyInCoop = false;
         }
-        else
+        else if (other.gameObject == Chicken) // Capitalized "Chicken"
         {
-            Debug.LogWarning("No banner GameObject assigned to enable!");
+            chickenInCoop = false;
+        }
+        else if (other.gameObject == Dog) // Capitalized "Dog"
+        {
+            dogInCoop = false;
         }
     }
 
-    // Function to disable the banner GameObject
-    public void DisableBanner()
+    void PlayWellDoneSound()
     {
-        if (banner != null)
+        if (audioSource != null && wellDoneClip != null)
         {
-            banner.SetActive(false);
-        }
-        else
-        {
-            Debug.LogWarning("No banner GameObject assigned to disable!");
+            audioSource.clip = wellDoneClip;
+            audioSource.Play();
         }
     }
 }
